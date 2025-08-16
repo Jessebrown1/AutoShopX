@@ -49,7 +49,7 @@
 
 
 
-                <button className='hidden md:block bg-white px-8 py-2 rounded-full'>Login</button>
+                <button className='hidden md:block bg-white px-8 py-2 rounded-full cursor-pointer'>Login</button>
                 <img onClick={()=> setShowMobileMenu(true)} src={menu} alt="Menu Icon" className='md:hidden w-7 cursor-pointer ' />
             </div>
 

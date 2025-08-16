@@ -109,3 +109,17 @@
         transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
     }
     
+
+        @media (max-width: 414px) { /* iPhone X and similar */
+            .button1,
+            .button2 {
+            margin-bottom: 15px; /* add a little space */
+            }
+        
+            /* remove bottom margin on the last one */
+            .button2:last-child,
+            .button1:last-child {
+            margin-bottom: 0;
+            }
+        }
+        
