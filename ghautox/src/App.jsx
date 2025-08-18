@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './assets/Components/Header/Header'
 import Filterbar from './assets/Components/Filterbar/Filterbar'
+import Footer from './assets/Components/Footer/Footer'
 
 const App = () => {
   return (
@@ -8,6 +9,8 @@ const App = () => {
       
       <Header/>
       <Filterbar/>
+      <Footer />
+      
       
       
     </div>
