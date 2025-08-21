@@ -1,11 +1,18 @@
     // src/data/mechanicsData.js
+    import Navbar from "../Navbar/Navbar";
+    import mech1 from "../../mech1.jpeg";
+    import mech2 from "../../mech2.jpeg";
+    import mech3 from "../../mech3.jpeg";
+    import mech4 from "../../mech4.jpeg";
+    import mech5 from "../../mech5.jpeg";
+    import mech6 from "../../mech6.jpeg";
     const mechanicsData = [
         {
         slug: "kwame-mensah",
         name: "Kwame Mensah",
         specialty: "Toyota & Honda Engines",
         location: "Accra, Ghana",
-        image: "/mechanics/kwame.jpg",
+        image: mech1,
         verified: true,
         phone: "+233201234567",
         },
@@ -14,7 +21,7 @@
         name: "Ama Boateng",
         specialty: "Body Works & Spraying",
         location: "Kumasi, Ghana",
-        image: "/mechanics/ama.jpg",
+        image: mech2,
         verified: true,
         phone: "+233209876543",
         },
@@ -23,7 +30,7 @@
         name: "Yaw Kyerematen",
         specialty: "Electrical & Diagnostics",
         location: "Takoradi, Ghana",
-        image: "/mechanics/yaw.jpg",
+        image: mech3,
         verified: false,
         phone: "+233207654321",
         },
@@ -32,7 +39,7 @@
         name: "Abena Owusu",
         specialty: "Brake Systems & Suspension",
         location: "Cape Coast, Ghana",
-        image: "/mechanics/abena.jpg",
+        image: mech4,
         verified: true,
         phone: "+233552384351",
         },
@@ -41,7 +48,7 @@
         name: "Kojo Tetteh",
         specialty: "General Servicing & Oil Change",
         location: "Tema, Ghana",
-        image: "/mechanics/kojo.jpg",
+        image: mech5,
         verified: false,
         phone: "+233552384351",
         },
@@ -50,7 +57,7 @@
         name: "Akosua Adomako",
         specialty: "Air Conditioning & Cooling Systems",
         location: "Sunyani, Ghana",
-        image: "/mechanics/akosua.jpg",
+        image: mech5,
         verified: true,
         phone: "+233552384351",
         },
