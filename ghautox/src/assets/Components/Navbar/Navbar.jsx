@@ -64,7 +64,7 @@
                     <a href="" className='px-4 py2 rounded-full inline-block'>Home</a>
                     <a href="" className='px-4 py2 rounded-full inline-block'>Browse Parts</a>
                     <a href="" className='px-4 py2 rounded-full inline-block'>Sell Parts</a>
-                    <Link to="/mechanics" className='cursor-pointer hover:text-gray-400'>Mechanics</Link>
+                    <Link to="/mechanics" className='px-4 py2 rounded-full inline-block'>Mechanics</Link>
                     <a href="" className='px-4 py2 rounded-full inline-block'>Login</a>
                 </ul>
 
