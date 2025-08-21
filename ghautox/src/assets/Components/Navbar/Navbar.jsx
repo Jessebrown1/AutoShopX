@@ -2,6 +2,7 @@
     import ghautox from '../../../assets/ghautox.png'
     import menu from '../../../assets/menu.png'
     import cross from '../../../assets/cross.png'
+    import { Link } from "react-router-dom";
     
 
     const Navbar = () => {
@@ -11,9 +12,9 @@
             <div className='container mx-auto flex justify-between items-center py-4 px-6 md:px-20 lg:px-32 bg-transparent'>
                 <img src={ghautox} alt="logo" className='w-20 h-auto'/>
                 <ul className='hidden md:flex gap-7 text-white'>
-                    <a href="#Header" className='cursor-pointer hover:text-gray-400'>Browse Parts</a>
-                    <a href="#About" className='cursor-pointer hover:text-gray-400'>Sell Parts</a>
-                    <a href="#Contact" className='cursor-pointer hover:text-gray-400'>Mechanics</a>
+                <Link to="/" className='cursor-pointer hover:text-gray-400'>Browse Parts</Link>
+                <Link to="/sell" className='cursor-pointer hover:text-gray-400'>Sell Parts</Link>
+                <Link to="/mechanics" className='cursor-pointer hover:text-gray-400'>Mechanics</Link>
                 </ul>
                 
 
@@ -63,6 +64,7 @@
                     <a href="" className='px-4 py2 rounded-full inline-block'>Home</a>
                     <a href="" className='px-4 py2 rounded-full inline-block'>Browse Parts</a>
                     <a href="" className='px-4 py2 rounded-full inline-block'>Sell Parts</a>
+                    <Link to="/mechanics" className='cursor-pointer hover:text-gray-400'>Mechanics</Link>
                     <a href="" className='px-4 py2 rounded-full inline-block'>Login</a>
                 </ul>
 
