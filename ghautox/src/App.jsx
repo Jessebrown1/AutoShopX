@@ -6,6 +6,7 @@ import Header from "./assets/Components/Header/Header";
 import Footer from "./assets/Components/Footer/Footer";
 import Filterbar from "./assets/Components/Filterbar/Filterbar";
 import MarketplaceProductPage from "./assets/Components/ProductPage/MarketplaceProductPage";
+import Sellparts from "./assets/Components/Sellparts/Sellparts";
 
 function Layout() {
   const location = useLocation();
@@ -20,6 +21,8 @@ function Layout() {
       <Routes>
         {/* Homepage */}
         <Route path="/" element={<Filterbar />} />
+
+        <Route path="Sellparts" element={<Sellparts/>} />
 
         {/* Mechanics */}
         <Route path="/mechanics" element={<Mechanics />} />

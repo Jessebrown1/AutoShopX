@@ -13,7 +13,7 @@
                 <img src={ghautox} alt="logo" className='w-20 h-auto'/>
                 <ul className='hidden md:flex gap-7 text-white'>
                 <Link to="/" className='cursor-pointer hover:text-gray-400'>Browse Parts</Link>
-                <Link to="/sell" className='cursor-pointer hover:text-gray-400'>Sell Parts</Link>
+                <Link to="/Sellparts" className='cursor-pointer hover:text-gray-400'>Sell Parts</Link>
                 <Link to="/mechanics" className='cursor-pointer hover:text-gray-400'>Mechanics</Link>
                 </ul>
                 
