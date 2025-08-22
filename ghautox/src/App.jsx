@@ -1,5 +1,7 @@
-// App.jsx
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { ToastContainer } from "react-toastify";   // ✅ import ToastContainer
+import "react-toastify/dist/ReactToastify.css";    // ✅ import styles
+
 import Mechanics from "./assets/Components/MechanicsPage/MechanicsPage";
 import MechanicProfile from "./assets/Components/MechanicProfile/MechanicProfile";
 import Header from "./assets/Components/Header/Header";
@@ -22,11 +24,11 @@ function Layout() {
         {/* Homepage */}
         <Route path="/" element={<Filterbar />} />
 
-        <Route path="Sellparts" element={<Sellparts/>} />
+        <Route path="/sellparts" element={<Sellparts />} /> {/* ✅ lowercase */}
 
         {/* Mechanics */}
         <Route path="/mechanics" element={<Mechanics />} />
-        <Route path="/mechanic/:slug" element={<MechanicProfile />} /> {/* fixed */}
+        <Route path="/mechanic/:slug" element={<MechanicProfile />} /> 
 
         {/* Marketplace */}
         <Route path="/marketplace" element={<Filterbar />} />
@@ -42,6 +44,8 @@ function App() {
   return (
     <Router>
       <Layout />
+      {/* ✅ ToastContainer here (once only) */}
+      <ToastContainer position="top-right" autoClose={3000} />
     </Router>
   );
 }

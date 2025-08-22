@@ -1,7 +1,12 @@
-    // SellCarPart.jsx
     import React from "react";
+    import { toast } from "react-toastify";
 
     const Sellparts = () => {
+    const handleSubmit = (e) => {
+        e.preventDefault(); // prevent page reload
+        toast.success("✅ Part listed for sale!");
+    };
+
     return (
         <div className="min-h-screen bg-gray-50 flex flex-col">
         {/* Header */}
@@ -18,7 +23,9 @@
             <h2 className="text-2xl font-bold text-gray-800 mb-6">
                 Sell Your Car Part
             </h2>
-            <form className="space-y-6">
+
+            {/* ✅ Added handleSubmit */}
+            <form className="space-y-6" onSubmit={handleSubmit}>
                 {/* Car Brand */}
                 <div>
                 <label className="block text-sm font-medium text-gray-700">
@@ -81,8 +88,8 @@
                 <input
                     type="file"
                     className="mt-1 block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 
-                    file:rounded-lg file:border-0 file:text-sm file:font-semibold 
-                    file:bg-[#0090871a] file:text-[#009087] hover:file:bg-[#00908733]"
+                        file:rounded-lg file:border-0 file:text-sm file:font-semibold 
+                        file:bg-[#0090871a] file:text-[#009087] hover:file:bg-[#00908733]"
                 />
                 </div>
 
@@ -113,15 +120,19 @@
                 </div>
 
                 {/* Submit Button */}
-                <button   className="
-    px-12 py-5 text-[12px] uppercase tracking-[2.5px] font-medium 
-    text-black bg-white rounded-[45px] shadow-[0px_8px_15px_rgba(0,0,0,0.1)] 
-    transition-all duration-300 ease-in-out cursor-pointer outline-none
-    hover:bg-[#009087] hover:text-white 
-    hover:shadow-[0px_15px_20px_rgba(46,229,157,0.4)] hover:-translate-y-[7px] 
-    active:-translate-y-[1px]
-  "> List Part for Sale
-</button>
+                <button
+                type="submit"
+                className="
+                    px-12 py-5 text-[12px] uppercase tracking-[2.5px] font-medium 
+                    text-black bg-white rounded-[45px] shadow-[0px_8px_15px_rgba(0,0,0,0.1)] 
+                    transition-all duration-300 ease-in-out cursor-pointer outline-none
+                    hover:bg-[#009087] hover:text-white 
+                    hover:shadow-[0px_15px_20px_rgba(46,229,157,0.4)] hover:-translate-y-[7px] 
+                    active:-translate-y-[1px]
+                "
+                >
+                List Part for Sale
+                </button>
             </form>
             </section>
 
@@ -134,8 +145,9 @@
             >
             <h2 className="text-3xl font-bold mb-4">Reach Thousands of Buyers</h2>
             <p className="text-lg mb-6">
-                Upload your car part and connect with mechanics, car enthusiasts, and buyers across Ghana.
-                Our marketplace makes it easy to sell faster.
+                Upload your car part and connect with mechanics, car enthusiasts,
+                and buyers across Ghana. Our marketplace makes it easy to sell
+                faster.
             </p>
             <img
                 src="/car-parts.png"

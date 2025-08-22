@@ -22,7 +22,7 @@ const Header = () => {
                 <div className='space-x-6 mt-8'>
                 
                     <Link to="/">
-        <button className="button1">Browse Parts</button>
+        <button className="button2">Browse Parts</button>
         </Link>
 
                     
