@@ -5,6 +5,7 @@
         import mech3 from "../../mech3.jpeg";
         import mech4 from "../../mech4.jpeg";
         import mech5 from "../../mech5.jpeg";
+        import mech6 from "../../mech6.jpeg";
         const mechanicsData = [
             {
                     name: "Kwame Autos",
