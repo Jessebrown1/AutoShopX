@@ -63,7 +63,7 @@
                 <ul className='flex flex-col items-center gap-2 mt-5 px-5 text-lg font-medium'>
                 <Link to="/" className='px-4 py2 rounded-full inline-block'>Home</Link>
                     <a href="" className='px-4 py2 rounded-full inline-block'>Browse Parts</a>
-                    <a href="/" className='px-4 py2 rounded-full inline-block'>Sell Parts</a>
+                    <Link to="/Sellparts" className='px-4 py2 rounded-full inline-block'>Sell Parts</Link>
                     <Link to="/mechanics" className='px-4 py2 rounded-full inline-block'>Mechanics</Link>
                     <a href="" className='px-4 py2 rounded-full inline-block'>Login</a>
                 </ul>

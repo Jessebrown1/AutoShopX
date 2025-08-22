@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../Navbar/Navbar';
 import './Header.css'; 
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -20,10 +21,14 @@ const Header = () => {
                 </p>
                 <div className='space-x-6 mt-8'>
                 
-<button class="button2">Browse Parts</button>
+                    <Link to="/">
+        <button className="button1">Browse Parts</button>
+        </Link>
 
                     
-<button class="button1">Sell Parts</button>
+    <Link to="/sellparts">
+        <button className="button1">Sell Parts</button>
+        </Link>
 
                 </div>
             </div>
